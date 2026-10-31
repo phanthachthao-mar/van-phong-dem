@@ -303,6 +303,9 @@ body.night .bb.rush{background:linear-gradient(160deg,rgba(255,118,96,.6),rgba(1
 body .bb:not(.rush){background:linear-gradient(160deg,rgba(255,255,255,.88),color-mix(in srgb,var(--c,#9b7bff) 52%,rgba(255,255,255,.5)));border-color:color-mix(in srgb,var(--c,#9b7bff) 55%,#fff);color:color-mix(in srgb,var(--c,#6a4fd0) 40%,#1d1640);box-shadow:inset 0 2px 5px rgba(255,255,255,.95),inset 0 -6px 10px color-mix(in srgb,var(--c,#9b7bff) 55%,transparent),0 7px 16px color-mix(in srgb,var(--c,#9b7bff) 38%,transparent)}
 body.night .bb:not(.rush){background:linear-gradient(160deg,color-mix(in srgb,var(--c,#9b7bff) 70%,#fff 12%),color-mix(in srgb,var(--c,#9b7bff) 55%,#120a40));border-color:color-mix(in srgb,var(--c,#9b7bff) 50%,#fff);color:#fff}
 @media(prefers-reduced-motion:reduce){body .bb{animation:none}}
+/* Ẩn khung 3D (lỗi WebGL trên máy này), giữ danh sách agent và nội dung chat */
+#stage{display:none!important}
+.wrap{grid-template-columns:minmax(0,1fr)!important}
 </style>
 </head>
 <body>
